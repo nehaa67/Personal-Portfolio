@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neha Shinde | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+    body { font-family:'Poppins', sans-serif; background:#f9fafc; color:#222; }
+    header { position:fixed; top:0; left:0; width:100%; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.05); z-index:10; }
+    nav { max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; }
+    nav h1 { font-size:1.5rem; font-weight:600; color:#5c4dee; }
+    nav ul { display:flex; gap:1.5rem; list-style:none; }
+    nav ul a { text-decoration:none; color:#222; font-weight:500; transition:color 0.3s; }
+    nav ul a:hover { color:#5c4dee; }
+
+    section { max-width:1100px; margin:auto; padding:6rem 2rem; }
+
+    #home { text-align:center; padding-top:8rem; }
+    #home h2 { font-size:2.5rem; font-weight:600; color:#333; }
+    #home p { margin:1rem 0; color:#555; font-size:1.1rem; }
+    #home .btns { margin-top:1.5rem; }
+    .btn {
+      display:inline-block;
+      margin:0.5rem;
+      padding:0.75rem 1.5rem;
+      border-radius:30px;
+      background:#5c4dee;
+      color:#fff;
+      text-decoration:none;
+      transition:background 0.3s;
+    }
+    .btn:hover { background:#4636d9; }
+
+    h3.section-title { text-align:center; font-size:2rem; margin-bottom:2rem; color:#333; }
+
+    /* About */
+    #about p { line-height:1.7; color:#444; max-width:800px; margin:auto; font-size:1.05rem; text-align:center; }
+
+    /* Skills */
+    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .skill-card { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 2px 10px rgba(0,0,0,0.05); transition:transform 0.3s; }
+    .skill-card:hover { transform:translateY(-5px); }
+    .skill-card h4 { color:#5c4dee; margin-bottom:0.5rem; }
+
+    /* Certifications */
+    .certs { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
+    .cert { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+    .cert h4 { color:#5c4dee; margin-bottom:0.25rem; }
+
+    /* Projects */
+    .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
+    .project { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 2px 10px rgba(0,0,0,0.05); transition:transform 0.3s; }
+    .project:hover { transform:translateY(-5px); }
+    .project h4 { color:#5c4dee; margin-bottom:0.5rem; }
+    .project p { color:#555; }
+
+    /* Experience */
+    .exp { background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 2px 10px rgba(0,0,0,0.05); max-width:800px; margin:auto; text-align:center; }
+    .exp h4 { color:#5c4dee; margin-bottom:0.5rem; }
+
+    /* Contact */
+    #contact form { max-width:600px; margin:auto; display:flex; flex-direction:column; gap:1rem; }
+    input, textarea { padding:0.75rem; border:1px solid #ddd; border-radius:8px; font-family:'Poppins'; }
+    button { background:#5c4dee; color:#fff; border:none; padding:0.75rem; border-radius:8px; cursor:pointer; transition:background 0.3s; }
+    button:hover { background:#4636d9; }
+
+    footer { text-align:center; padding:2rem; color:#666; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Neha Shinde</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hi, I'm Neha 👋</h2>
+    <p>A passionate Electronics and Telecommunication Engineering student who loves building things that mix logic and creativity.</p>
+    <div class="btns">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <p>
+      I'm a second-year Electronics and Telecommunication Engineering student at Pillai College of Engineering, Navi Mumbai.
+      I’m passionate about software development, AI, and embedded systems. I enjoy exploring new technologies, working on
+      creative projects, and finding smart ways to make things simpler. When I'm not coding, you'll probably find me immersed in music.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h3 class="section-title">Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Programming</h4>
+        <p>Python, C, C++, Java, JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <h4>Frameworks & Tools</h4>
+        <p>React, Node.js, MATLAB, Arduino, Git</p>
+      </div>
+      <div class="skill-card">
+        <h4>Cloud</h4>
+        <p>AWS (Certified Solutions Architect)</p>
+      </div>
+      <div class="skill-card">
+        <h4>Soft Skills</h4>
+        <p>Team Leadership, Communication, Critical Thinking, Time Management</p>
+      </div>
+      <div class="skill-card">
+        <h4>Domains</h4>
+        <p>Web Development, AI Integration, Embedded Systems</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h3 class="section-title">Certifications</h3>
+    <div class="certs">
+      <div class="cert">
+        <h4>AWS Certified Solutions Architect</h4>
+        <p>Issued Oct 2025 — Cloud Cost Management, System Architecture, Technical Communication</p>
+      </div>
+      <div class="cert">
+        <h4>Arduino Training, IIT Bombay</h4>
+        <p>Issued Oct 2025 — Embedded Systems, Arduino IDE</p>
+      </div>
+      <div class="cert">
+        <h4>Hack Robo 1.0, Pillai College of Engineering</h4>
+        <p>Issued Sep 2025 — Critical Thinking, Problem Solving, Teamwork</p>
+      </div>
+      <div class="cert">
+        <h4>Ethical Hacking Workshop, Alegria</h4>
+        <p>Issued Mar 2025 — Cybersecurity, Kali Linux, Cryptography</p>
+      </div>
+      <div class="cert">
+        <h4>MATLAB Certified, MathWorks</h4>
+        <p>Issued Sep 2024 — Basic signal processing and RAP code implementation</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>ClarityAI — Chrome AI Extension</h4>
+        <p>Built an extension using Built-in AI APIs to summarize, rewrite, translate, and proofread text on any webpage.
+          Focused on accessibility and privacy-first design.</p>
+      </div>
+      <div class="project">
+        <h4>Personal Portfolio Website</h4>
+        <p>Developed a responsive portfolio using HTML, CSS, and JS to showcase projects and skills. Focused on usability and minimal design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h3 class="section-title">Experience</h3>
+    <div class="exp">
+      <h4>IEEE PCE Student Branch — Webmaster Member</h4>
+      <p>Oct 2024 – Present</p>
+      <p>Designed and maintained the official IEEE PCE website, collaborated with teams for event updates, and worked on responsive UI frameworks.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3 class="section-title">Contact Me</h3>
+    <form action="https://formspree.io/f/mwkglgpg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div style="text-align:center;margin-top:1rem;">
+      <p>Email: <a href="mailto:nehashinde2707@gmail.com">nehashinde2707@gmail.com</a></p>
+      <p><a href="https://github.com/nehaa67">GitHub</a> | <a href="https://linkedin.com/in/nehashinde27">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Neha Shinde | Built with ❤️ </p>
+  </footer>
+
+  <script>
+    // Simple fade-in animation
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){ entry.target.style.opacity = 1; entry.target.style.transform = "translateY(0)"; }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => {
+      sec.style.opacity = 0;
+      sec.style.transform = "translateY(30px)";
+      sec.style.transition = "all 0.8s ease-out";
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
